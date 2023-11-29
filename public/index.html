@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="bg-gradient-to-r from-purple-600 to-blue-500">
+    <div class="h-12 sticky top-0 bg-gradient-to-r from-purple-900 to-blue-900 shadow-2xl  ">
+        <nav >
+            <!-- humburger -->
+            <div class="flex justify-between ">
+                <div>
+                    <img src="/img/logo.png" alt="logo" class="w-10 relative mx-3 top-1">
+                </div>
+                <div class="sm:hidden w-9 h-6  cursor-pointer mx-3 relative top-3 " id="humburger">
+                    <div class="w-full bg-black h-1 mb-1 rounded-md"></div>
+                    <div class="w-full bg-black h-1 mb-1 rounded-md"></div>
+                    <div class="w-full bg-black h-1 mb-1 rounded-md"></div>
+                </div>
+
+            </div>
+            <ul class="pb-2 mx-3 sm:flex sm:justify-end  sm:absolute sm:right-2 sm:top-0  sm:text-white sm:bg-none sm:mr-20 sm:translate-y-0 relative top-4 rounded-lg bg-gradient-to-r from-purple-400 to-blue-400  -translate-y-52 transition-all duration-200" id="ul">
+                <li class="sm:pr-5 sm:text-2xl my-2 sm:hover:text-gray-400 text-3xl sm:hover:bg-none text-center hover:bg-gradient-to-r from-purple-400 to-blue-400 underline"><a href="">Home</a></li>
+                <li class=" my-2 sm:text-2xl text-3xl sm:hover:text-gray-400 sm:hover:bg-none text-center hover:bg-gradient-to-r from-purple-400 to-blue-400"><a href="about.html" >About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body class="bg-gradient-to-r from-purple-600 to-blue-500 ">
+   
+    <!-- text area -->
+    <div class="sm:flex sm:justify-between ">
+        
+        <div class="sm:py-3 py-5 px-3 text-center sm:w-1/2  sm:ml-0 ">
+            <p class="text-4xl"><label for="text-util">Type here</label></p>
+            <textarea id="text-util" class="w-full  shadow-2xl outline-none sm:h-72 h-80 text-2xl p-5 my-4" ></textarea>
+            
+            <!-- drop down button -->
+        </div>
+        
+        <div class="sm:w-1/2 sm:mr-0 px-2">
+            <h1 class="text-center text-4xl sm:pt-2">Preview</h1>
+            <div class="relative">
+                <img src="/img/copy.png" alt="copy" class="w-5 absolute right-5 bottom-0 cursor-pointer" title="copy" id="copy_text">
+            </div>
+            <div class="m-1 border-2 shadow-2xl  h-56 sm:my-5 sm:h-72 ">
+                <p class="h-full overflow-auto text-2xl p-5 break-words" id="textinput" >
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    
+        <div class="text-center">
+            <button class="sm:mx-1 shadow-2xl m-4 text-xl p-2 bg-slate-200 italic hover:bg-slate-100" id="clearall">Clear All</button>
+            <button class="sm:mx-1 shadow-2xl m-4 text-xl p-2 bg-slate-200 italic hover:bg-slate-100" id="uppercase">ToUpperCase</button>
+            <button class="sm:mx-1 shadow-2xl m-4 text-xl p-2 bg-slate-200 italic hover:bg-slate-100" id="lowercase">ToLowerCase</button>
+        </div>
+        
+
+        <div class="flex justify-center">
+            <select name=""  id="select_option" class="rounded-lg p-2 overflow-x-auto overflow-y-auto outline-none sm:w-96 w-80 mx-1 cursor-pointer"size=4 >
+                <option value="select" class="text-center border-b-2 hover:bg-gray-700 hover:text-white">-- select --</option>
+                <option value="extract_number" class="text-center border-b-2 hover:bg-gray-700 hover:text-white">extract_number</option>
+                <option value="extract_number_remove_comma" class="text-center border-b-2 hover:bg-gray-700 hover:text-white">extract_number(without comma)</option>
+                <option value="extract_string" class="text-center border-b-2 hover:bg-gray-700 hover:text-white">extract_string</option>
+                <option value="extract_string_remove_comma" class="text-center border-b-2 hover:bg-gray-700 hover:text-white">extract_string(without space)</option>
+                <option value="spacial_charecter" class="text-center border-b-2 hover:bg-gray-700 hover:text-white">spacial_charecter</option>
+                <option value="spacial_charecter_remove_comma" class="text-center border-b-2 hover:bg-gray-700 hover:text-white">spacial_charecter(without space)</option>
+                
+            </select>
+        </div>
+   
+    <p class="mx-5 sm:-mt-5 mt-4 text-xl">
+        <span id="word_count" >0</span> Words
+    </p>
+    <p  class="mx-5  text-xl">
+        <span id="letter_count" >0</span> Characters
+    </p>
+    <p  class="mx-5 mb-4 text-xl">
+        Read Time: <span id="read_time" >0</span> mins
+    </p>
+   
+    <script src="js/nav.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
