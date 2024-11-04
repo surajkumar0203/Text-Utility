@@ -10,5 +10,12 @@
   },
   "dependencies": {
     "vite": "^4.5.0"
-  }
+  },
+  "name": "text-utility",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

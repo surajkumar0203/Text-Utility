@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<header class="bg-gradient-to-r from-purple-600 to-blue-500">
+    <div class="h-12 sticky top-0 bg-gradient-to-r from-purple-900 to-blue-900 shadow-2xl  ">
+        <nav >
+            <!-- humburger -->
+            <div class="flex justify-between ">
+                <div>
+                    <img src="/img/logo.png" alt="logo" class="w-10 relative mx-3 top-1">
+                </div>
+                <div class="sm:hidden w-9 h-6  cursor-pointer mx-3 relative top-3 " id="humburger">
+                    <div class="w-full bg-black h-1 mb-1 rounded-md"></div>
+                    <div class="w-full bg-black h-1 mb-1 rounded-md"></div>
+                    <div class="w-full bg-black h-1 mb-1 rounded-md"></div>
+                </div>
+
+            </div>
+            <ul class="pb-2 mx-3 sm:flex sm:justify-end  sm:absolute sm:right-2 sm:top-0  sm:text-white sm:bg-none sm:mr-20 sm:translate-y-0 relative top-4 rounded-lg bg-gradient-to-r from-purple-400 to-blue-400  -translate-y-52 transition-all duration-200" id="ul">
+                <li class="sm:pr-5 sm:text-2xl my-2 sm:hover:text-gray-400 text-3xl sm:hover:bg-none text-center hover:bg-gradient-to-r from-purple-400 to-blue-400 "><a href="index.html">Home</a></li>
+                <li class=" my-2 sm:text-2xl text-3xl sm:hover:text-gray-400 sm:hover:bg-none text-center hover:bg-gradient-to-r from-purple-400 to-blue-400 underline"><a href="" >About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+
+    
+    <section class="bg-gray-100">
+        <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                <div class="max-w-lg">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">About Us</h2>
+                    <p class="mt-4  text-xl">Welcome to the Text Utility website! Created by Suraj Kumar, this tool is designed to simplify and enhance your text processing needs. Whether you need to extract specific characters, convert cases, or organize text more effectively, our tool can help you get the job done efficiently.</p>
+                    <h3 class="text-3xl font-extrabold mt-4">Key Features</h3>
+                    <ul class="mt-4">
+                        <li class="text-lg "><span class="font-semibold">Extract Text Elements: </span>Isolate and extract strings, numbers, and special characters from any text.</li>
+                        <li class="text-lg "><span class="font-semibold">Convert Text: </span>Instantly switch between uppercase and lowercase to match your formatting requirements.</li>
+                        <li class="text-lg "><span class="font-semibold">Simple & Intuitive: </span>Built with user-friendly design using Tailwind CSS, making it easy to navigate and utilize the tools.</li>
+                    </ul>
+                    <h3 class="text-3xl font-extrabold mt-4">About the Developer</h3>
+                    <p class="text-xl mt-4">My name is Suraj Kumar, and I am passionate about creating practical tools and applications. I developed this website with a focus on providing a simple yet powerful utility for text manipulation tasks. This project is a step toward making text processing accessible and efficient for everyone.</p>
+                </div>
+                <div class="relative">
+                    <img class="absolute inset-x-0 bottom-0 mb-1 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
+                    <img class="relative rounded-full w-80 xl:max-w-lg xl:mx-auto xl:origin-bottom 2xl:scale-110" src="./img/pic.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- java script -->
+    <script src="./public/js/nav.js"></script>
+</body>
+</html>
