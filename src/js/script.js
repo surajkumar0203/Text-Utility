@@ -10,7 +10,7 @@ let select_option=document.getElementById('select_option');
 let count=0
 let flag1=0
 textarea.addEventListener('input',()=>{
-    copy_text.src='/img/copy.png'
+    copy_text.src='img/copy.png'
     let letter_count=document.getElementById('letter_count');
     let word_count=document.getElementById('word_count');
     textinput.innerHTML=textarea.value;
@@ -28,7 +28,7 @@ textarea.addEventListener('input',()=>{
 })
 
 uppercase.addEventListener('click',()=>{
-    copy_text.src='/img/copy.png'
+    copy_text.src='img/copy.png'
     let temp=textarea.value
     if(temp.length==0){
         textinput.innerHTML="At list One Charecter"
@@ -42,7 +42,7 @@ uppercase.addEventListener('click',()=>{
     }
 })
 lowercase.addEventListener('click',()=>{
-    copy_text.src='/img/copy.png'
+    copy_text.src='img/copy.png'
     let temp=textarea.value
     if(temp.length==0){
         textinput.innerHTML="At list One Charecter"
@@ -56,7 +56,7 @@ lowercase.addEventListener('click',()=>{
     }
 })
 clearall.addEventListener('click',()=>{
-    copy_text.src='/img/copy.png'
+    copy_text.src='img/copy.png'
     textarea.value="";
     textinput.innerHTML="";
     read_time.innerHTML=0
@@ -72,7 +72,7 @@ copy_text.addEventListener('click',()=>{
     else{
         // copy text to clip board
         navigator.clipboard.writeText(temp)
-        copy_text.src='/img/checked.png'
+        copy_text.src='img/checked.png'
 
     }
 
@@ -80,7 +80,7 @@ copy_text.addEventListener('click',()=>{
 
 // option
 select_option.addEventListener('click',()=>{
-    copy_text.src='/img/copy.png'
+    copy_text.src='img/copy.png'
     if(select_option.value=='select'){
         
         textinput.innerHTML=textinput.innerText

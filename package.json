@@ -1,7 +1,9 @@
 {
   "scripts": {
     "start": "vite",
-    "build:tailwind": "tailwindcss build -i ./src/style.css -o ./public/style.css"
+    "build:tailwind": "tailwindcss build -i ./src/style.css -o ./public/style.css",
+    "build": "npm run build:tailwind && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
